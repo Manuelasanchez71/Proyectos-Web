@@ -20,14 +20,15 @@ body{
     height: 80%;
     margin-right: 20px;
 }
-
-.contenedor-imagen > img{
+.contenedor-imagen .img{
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 60px;
+    cursor: pointer;
 }
 
-.contenedor-imagen:nth-child(1){
-    width: 76%;
+/* Clase para manejo del evento Click */
+.contenedor-imagen.activo{
+    width: calc(100% - 3*8%);
 }
