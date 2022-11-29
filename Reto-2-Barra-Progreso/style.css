@@ -20,8 +20,8 @@ body{
     align-items: center;
 }
 .carga-numero{
-    width: 60px;
-    height: 60px;
+    width: 25%;
+    height: 100%;
     border-radius: 50%;
     border: 2px solid gray;
     display: flex;
@@ -30,11 +30,16 @@ body{
 }
 .carga-numero.activo{
     border: 2px solid blue;
+    transition: all 0.2s;
 }
 .carga-barra{
     height: 2px;
-    width: 60px;
+    width: 90px;
     background-color: gray;
+}
+.carga-barra.activo{
+    background-color: blue;
+    transition: all 1s ease in 1s;
 }
 .contenedor-btn{
     margin-top: 60px;
@@ -44,18 +49,18 @@ body{
     align-items: center;
 }
 .boton{
-    min-width: 25%;
+    min-width: 15%;
     font-size: 18px;
     line-height: 25px;
     font-weight: 600;
-    background: linear-gradient( to top left, rgb(158, 48, 48), rgb(24, 116, 49));
-    box-shadow: 0 1px 2px 2px rgb(165, 164, 164);
+    background: rgb(75, 61, 61);
+    box-shadow: 0 0.2px 1px 1px rgb(165, 164, 164);
     margin-right: 20px;
+    padding: 0 5px;
 }
 
 .boton:hover{
     cursor: pointer;
-    transform: scale(1.05);
     transition: all 1s ease-in 0.5s;
-    background: linear-gradient( to top right, rgb(8, 88, 146), rgba(26, 10, 62, 0.856));
+    background: linear-gradient( to top right, rgba(212, 212, 212, 0.817), rgba(75, 61, 61, 0.96));
 }
